@@ -1,0 +1,50 @@
+#include <stdio.h>
+int conv1(float km,float mil)
+{
+    mil=km*1.609;
+    return 1;
+}
+int conv2(float inch,float ft)
+{
+
+    inch=ft*12;
+    return 2;
+}
+int conv3(int pnd,int kg)
+{
+    kg=2.25*pnd;
+    return 1;
+}
+int main()
+{
+    int a;
+    printf("slelect the options given below");
+    printf("1,2,3");
+    scanf("%d",a);
+    switch (a)
+    {
+    case 1:
+        int num;
+        printf("enter the value");
+        scanf("%f",num);
+        printf("%f the converted value is %f \n",conv1(num));
+        break;
+    case 2:
+    int num;
+        printf("enter the value");
+        scanf("%f",num);
+        printf("%f the converted value is %f \n",conv2(num));
+        break;
+    case 3:
+    int num;
+        printf("enter the value");
+        scanf("%f",num);
+        printf("%f the converted value is %f \n",conv3(num));
+        break;
+    
+    default:
+        printf("invalid input")
+        break;
+    }
+
+}
